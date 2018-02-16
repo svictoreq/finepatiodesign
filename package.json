@@ -1,0 +1,29 @@
+{
+  "name": "finepatiodesign",
+  "version": "1.0.0",
+  "description": "Clon del sitio original",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svictoreq/finepatiodesign.git"
+  },
+  "author": "Victor Requena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svictoreq/finepatiodesign/issues"
+  },
+  "homepage": "https://github.com/svictoreq/finepatiodesign#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
