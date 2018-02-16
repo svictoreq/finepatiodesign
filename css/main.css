@@ -79,3 +79,36 @@ nav .dropdown {
 	visibility: hidden;
 	position: absolute;
 }
+
+/* Description */
+
+#description {
+	padding-top: 70px;
+	display: flex;
+	height: 100%;
+}
+
+#description > #d-text {
+	padding-left: 4em;
+	padding-right: 2em;
+	width: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+#description > #d-text h1 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1em;
+	margin-top: 0;
+}
+
+#description > #d-text p {
+	font-size: 16px;
+	line-height: 1.7em;
+}
+
+#d-image-wrapper {
+	width: 50%;
+	margin-top: 70px;
+}
