@@ -112,3 +112,35 @@ nav .dropdown {
 	width: 50%;
 	margin-top: 70px;
 }
+
+/* Gallery Section */
+
+#gallery {
+	display: flex;
+	padding: 81px 0;
+}
+
+.gallery-item {
+	display: block;
+	width: 33.3%;
+	padding: 150px 0;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background-size: cover;
+	font-size: 30px;
+	text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4);
+	position: relative;
+}
+
+.gallery-item:nth-child(1) {
+	background-image: url('../img/lets-get-started.jpg');
+}
+
+.gallery-item:nth-child(2) {
+	background-image: url('../img/my-projects.jpg');
+}
+
+.gallery-item:nth-child(3) {
+	background-image: url('../img/3d-design.jpg');
+}
