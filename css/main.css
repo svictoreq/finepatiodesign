@@ -1,0 +1,55 @@
+body {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* Site's Header */
+
+#top-header {
+	width: 94%;
+	display: flex;
+	padding-bottom: 4px;
+	height: 259px;
+}
+
+#top-contact {
+	width: 44.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5.5%;
+}
+
+#top-contact .ph-number {
+	font-size: x-large;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+#top-contact .normal {
+	font-size: 1rem;
+	margin-bottom: 16px;
+}
+
+#top-contact .normal:last-child {
+	margin: 0;
+}
+
+#top-header img {
+	width: 50%;
+	max-width: 100%;
+}
