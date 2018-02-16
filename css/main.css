@@ -148,3 +148,50 @@ nav .dropdown {
 .gallery-item:nth-child(3) {
 	background-image: url('../img/3d-design.jpg');
 }
+
+/* Who we are Section */
+
+section#about {
+	padding: 100px 0;
+	background-image: url('../img/who-we-are.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#description-wrapper {
+	background-color: rgba(255, 255, 255, 0.72);
+	display: flex;
+	padding: 27px 0;
+}
+
+#description-wrapper figure {
+	box-sizing: border-box;
+	width: 50%;
+	padding-top: 200px;
+}
+
+#description-wrapper figure h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	line-height: 1em;
+	text-align: center;
+}
+
+#description-wrapper figcaption {
+	box-sizing: border-box;
+	padding: 100px 50px;
+	width: 50%;
+	line-height: 1.8em;
+	font-size: large;
+}
+
+#description-wrapper figcaption * {
+	margin: 0;
+	margin-bottom: 1em;
+	text-align: justify;
+}
+
+#description-wrapper figcaption p:last-child {
+	margin: 0;
+}
