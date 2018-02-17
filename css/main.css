@@ -66,31 +66,77 @@ button {
 /* Navigation bar */
 
 nav {
-	display: flex;
-	justify-content: center;
 	padding: 24px 0;
 	background-color: #000000;
 }
 
-nav a {
+nav > ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul li {
+	position: relative;
 	font-size: 20px;
 	margin: 0 28px 0 0;
+}
+
+nav > ul > li:last-child {
+	margin: 0;
+}
+
+nav > ul li a {
 	color: #ffffff;
 	text-decoration: none;
 }
 
-nav a:last-child {
-	margin: 0;
-}
-
-nav a span{
+nav > ul a span{
 	margin-left: 5px;
 	font-size: 14px;
 }
 
+nav li > a:hover {
+	color: rgba(169, 74, 42, 0.8);
+}
+
 nav .dropdown {
 	visibility: hidden;
+	box-sizing: border-box;
 	position: absolute;
+	top: 52px;
+	margin: 0;
+	padding: 20px;
+	width: 240px;
+	list-style: none;
+	color: #ffffff;
+	background-color: #000000;
+	border-top: solid 3px #a94a2a;
+}
+
+nav .dropdown li.drp-item {
+	padding: 6px 20px;
+	margin: 0;
+	font-size: 20px;
+	word-wrap: break-word;
+}
+
+nav > ul > li:nth-child(2):hover::after {
+	content: '';
+	height: 24px;
+	width: 100%;
+	display: block;
+	position:absolute;
+}
+
+nav > ul > li:nth-child(2):hover > .dropdown {
+	visibility: visible;
+}
+
+.dropdown:hover {
+	visibility: visible;
 }
 
 /* Description */
