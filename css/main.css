@@ -2,7 +2,6 @@ body {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 1.7em;
 	margin: 0;
 }
 
@@ -14,6 +13,12 @@ img {
 figure {
 	margin: 0;
 	padding: 0;
+}
+
+button {
+	outline: none;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	cursor: pointer;
 }
 
 /* Site's Header */
@@ -194,4 +199,47 @@ section#about {
 
 #description-wrapper figcaption p:last-child {
 	margin: 0;
+}
+
+/* Consultation Section */
+
+#consultation {
+	padding: 4% 0;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+}
+
+#consultation h2 {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 2.75%;
+}
+
+#consultation a {
+	display: inline-block;
+	font-size: 34px;
+	font-weight: 700;
+	padding: 0.3em 4em;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	line-height: 1.7em;
+	box-shadow: 0px 10px 18px -6px rgba(255,255,255,0.3);
+}
+
+#consultation a svg {
+	margin-left: 0.3em;
+}
+
+#consultation a:hover {
+	background-color: #000000;
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+#consultation .separator {
+	height: 27px;
 }
