@@ -22,7 +22,6 @@ button {
 	cursor: pointer;
 }
 
-
 /* Site's Header */
 
 #top-header {
@@ -275,8 +274,9 @@ section#about {
 #consultation h2 {
 	font-size: 50px;
 	text-align: center;
-	margin: 0;
+	margin: auto;
 	margin-bottom: 2.75%;
+	width: 80%;
 }
 
 #consultation a {
