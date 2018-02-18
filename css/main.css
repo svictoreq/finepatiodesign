@@ -3,6 +3,7 @@ body {
 	font-size: 14px;
 	font-weight: 500;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 img {
@@ -20,6 +21,7 @@ button {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	cursor: pointer;
 }
+
 
 /* Site's Header */
 
@@ -52,6 +54,7 @@ button {
 	margin-bottom: 16px;
 	color: #000000;
 	text-decoration: none;
+	font-weight: 300;
 }
 
 #top-contact .normal:last-child {
@@ -65,9 +68,17 @@ button {
 
 /* Navigation bar */
 
+.mobile-nav {
+	display: none;
+}
+
 nav {
 	padding: 24px 0;
 	background-color: #000000;
+}
+
+nav > span {
+	display: none;
 }
 
 nav ul {
@@ -101,6 +112,10 @@ nav > .main-ul > .nav-item:last-child {
 
 nav li a:hover {
 	color: rgba(255, 255, 255, 0.8);
+}
+
+#arrow-indicator {
+	margin-left: 0.3em;
 }
 
 /* Dropdown Gallery Menu */
@@ -330,10 +345,6 @@ section#about {
 	padding-bottom: 10px;
 }
 
-#multi > .wrapper section:nth-child(2) h2 {
-	text-align: center;
-}
-
 #multi > .wrapper section:not(:first-child) h2::before {
 	content: '';
 	display: block;
@@ -349,6 +360,11 @@ section#about {
 	display: block;
 	content: '';
 	height: 67px;
+}
+
+#free-estimate h3 {
+	font-size: 20px;
+	font-weight: 300;
 }
 
 #free-estimate a {
@@ -381,6 +397,11 @@ section#about {
 	transition: all .2s;
 }
 
+#contact h2 {
+	text-align: center;
+	margin-bottom: 20px !important;
+}
+
 #contact ul {
 	list-style: none;
 	padding: 0;
@@ -401,7 +422,7 @@ section#about {
 }
 
 #social .social-wrapper {
-	display: flex;
+	display: flex !important;
 	align-items: center;
 }
 
@@ -445,4 +466,255 @@ footer p {
 	line-height: 1.7em;
 	margin: 0;
 	padding: 0;
+}
+
+/* Mobile Site - iPad (general) */
+
+@media only screen and (max-width: 1024px) {
+
+	/* Mobile Top Header */
+
+	#top-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding-bottom: 23px;
+	}
+
+	#top-header #top-contact{
+		margin: 0;
+		height: auto;
+		order: 1;
+	}
+
+	#top-contact a {
+		display: block;
+	}
+
+	#top-header img {
+		width: 80%;
+	}
+
+	/* Mobile Description Section */
+
+	#description {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#description div {
+		width: 100%;
+	}
+
+	#description #d-text {
+		width: 86%;
+		padding: 0;
+	}
+
+	#d-text h1 {
+		text-align: center;
+	}
+
+	#d-text p {
+		text-align: justify;
+	}
+
+	#description figure {
+		width: 100%;
+	}
+
+	/* Mobile Gallery Section */
+
+	#gallery {
+		flex-direction: column;
+	}
+
+	#gallery a {
+		width: 100%;
+	}
+
+	/* Mobile Who We Are Section */
+
+	#about {
+		background-position: center;
+	}
+
+	#about #description-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#description-wrapper figure {
+		width: 100%;
+	}
+
+	#description-wrapper figcaption {
+		width: 100%;
+	}
+
+	/* Mobile Multiple Section */
+
+	#multi .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#multi .wrapper section {
+		width: 80%;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#free-estimate p, h2, h3 {
+		text-align: center;
+	}
+
+	#free-estimate h3 {
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	#contact h2 {
+		margin-bottom: 20px;
+	}
+
+	#contact .contact-item {
+		text-align: center;
+	}
+
+	#social h2 {
+		margin-bottom: calc(9.27% + 20px) !important;
+	}
+}
+
+/* Mobile Site - Smartphones */
+
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+
+	/* Mobile Navbar */
+
+	.mobile-nav {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 10% 5%;
+		background-color: #000000;
+	}
+
+	nav {
+		display: none;
+		padding-top: 0;
+		border-top: 3px solid #a94a2a;
+		position: absolute;
+		width: 84%;
+		left: 8%;
+	}
+
+	.mobile-nav span, #show-menu {
+		color: #ffffff;
+		font-size: 18px;
+	}
+
+	.mobile-nav #show-menu {
+		padding: 2%;
+		background-color: transparent;
+		border: none;
+		color: #a94a2a;
+	}
+
+	nav .main-ul {
+		flex-direction: column;
+		padding: 0 10%;
+		padding-right: calc(10% + 15.75px)
+	}
+
+	.nav-item {
+		margin: 0 !important;
+		padding: 2px 0;
+	}
+
+	nav a {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.main-ul .dropdown {
+		position: static;
+		visibility: visible;
+		width: auto;
+		top: 0;
+		padding: 0;
+		margin: 0;
+		margin-top: 8px;
+		border: none;
+	}
+
+	.nav-item:nth-child(2):hover::after {
+		display: none;
+	}
+
+	/* Mobile Description */
+
+	#description > #d-text {
+		width: 75%;
+	}
+
+	#description > #d-text h1 {
+		font-size: 32px;
+	}
+
+	#description > #d-text p {
+		font-weight: 300;
+	}
+
+	/* Mobile Who We Are Section */
+
+	#about #description-wrapper h1 {
+		font-size: 36px;
+	}
+
+	#about #description-wrapper figcaption {
+		padding: 100px 10%;
+		font-weight: 300;
+	}
+
+	/* Mobile Consultation Section */
+
+	#consultation {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#consultation h2 {
+		width: 80%;
+		font-size: 36px;
+	}
+
+	#consultation a {
+		margin-top: 30px;
+		display: inline-block;
+		font-size: 20px;
+	}
+
+	/* Mobile Multiple Section */
+
+	#free-estimate a {
+		padding: 0.3em 1em;
+	}
+
+	/* Mobile Footer Section */
+
+	footer p {
+		font-size: 14px;
+	}
 }
